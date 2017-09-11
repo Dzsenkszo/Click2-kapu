@@ -157,7 +157,7 @@ void setup () {
       GSM_Pwr_Key_Dir = 0;
       M95_PW_LED_Dir = 0;
 
-      UART1_Init(115200);                  // 9600 baud -nal "lemarad" ?
+      UART1_Init(9600);                  // 9600 baud -nal "lemarad" ?
       Delay_ms(100);
       
       rxidx  = 0;
@@ -235,6 +235,11 @@ void OsszefuzMSG3 (char *elso, char *masodik, char *harmadik) {   //Az eredmeny 
      strcat(Osszefuz, masodik);
      strcat(Osszefuz, harmadik);
 }
+/*A modul valaszanak ertelmezese***********************************************/
+
+
+
+
 
 
 /******************************************************************************/
